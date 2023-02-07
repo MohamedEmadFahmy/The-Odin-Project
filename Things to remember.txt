@@ -1,0 +1,2 @@
+*	You can make an anchor tag open a link in a new tab using 	(target = "_blank") attribute
+*
