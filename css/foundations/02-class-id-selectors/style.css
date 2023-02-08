@@ -1,0 +1,21 @@
+.odd{
+    background-color: rgb(226, 151, 151);
+    font-size: 35px;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+.cooler {
+    font-size: 50px;
+}
+#four {
+    background-color: lime;
+    font-weight: bolder;
+    font-size: 45px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#two {
+    color: blue;
+    font-size: 60px;
+    font-weight: 400;
+    font-family:Arial, Helvetica, sans-serif;
+}
