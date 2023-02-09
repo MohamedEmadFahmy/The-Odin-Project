@@ -1,14 +1,23 @@
 * {
     color: blueviolet;
     background-color: blanchedalmond;
+    border: solid red 3px;
 }
 h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   ;
     font-size: 50px;
     font-weight: 600;
+    height: 400px;
+    width: auto;
     font-style: italic;
     text-align: center;
+    box-sizing: border-box;
 }
+#first {
+    padding: 60px;
+}
+/* First box is now bigger as padding increases the height */
+/* If you want them to be the same width regardless of the height you should enable box-sizing: border box; element */
 img {
     height: auto;
     width: 700px;
