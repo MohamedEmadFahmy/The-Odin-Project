@@ -10,9 +10,98 @@
     padding: 20px 0;
     display: flex;
     justify-content: center;
+    /* justify-content: flex-start;
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
   }
   
   .menu {
-    border: 1px solid #fff;  /* For debugging */
+    /* border: 1px solid #fff;  For debugging */
     width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .links {
+    /* border: 1px solid #fff;  For debugging */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login {
+    margin-left: 20px;
+  }
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: stretch; */
+    /* align-items: baseline; */
+  }
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+  }
+  .first-item {
+    order: 1;
+  }
+  
+  .last-item {
+    order: -1;
+  }
+  .social, .subscribe {
+    align-self: flex-end;
+    /* align-self overwrites the align-items property given by the parent. it has center, flex-start, flex-end, stretch, baseline like align items */
+    margin-bottom: 20px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1; /* tells the items how much to grow. The higher the number the bigger */
+  }
+  .footer-three {
+    flex: 2; /* item 3 will be twice the size of 1 and 2*/
+  }
+  .footer-one, .footer-three {
+  background-color: #5995DA;
+  flex: initial; /* initial makes the box have a fixed size. When you resize the browser window, you’ll see that only the middle box in the footer gets resized.*/
+  width: 300px;
+}
+.signup {
+    margin-left: auto; /* takes up all the space possible from the left*/
   }
