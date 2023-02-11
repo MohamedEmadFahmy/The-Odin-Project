@@ -4,13 +4,16 @@
     margin: 0px;
 }
 nav {
-    display: flex;
+    /* display: flex; */
+    margin-top: 200px;
 }
 div{
     font-size: 30px;
     text-align: center;
+    border: 10px solid orange;
     margin-bottom: 10px;
     background-color: brown;
-    border: 10px solid orange;
     padding: 20px;
+    width: 200px;
+    margin: 0 auto;
 }
