@@ -4,16 +4,32 @@
     margin: 0px;
 }
 nav {
-    /* display: flex; */
-    margin-top: 200px;
+    display: flex;
+    /* margin-top: 200px; */
+    margin-top: 400px;
+    /* margin-left: 550px; */
+    border: 10px solid orange; 
+    /* width: fit-content; */
+    /* width: auto; */
 }
 div{
     font-size: 30px;
     text-align: center;
-    border: 10px solid orange;
-    margin-bottom: 10px;
-    background-color: brown;
+    /* margin-bottom: 10px; */
     padding: 20px;
-    width: 200px;
-    margin: 0 auto;
 }
+.home, .profile{
+    background-color: rgb(255, 87, 87);
+    flex: 1;
+}
+.about {
+    background-color: rgb(124, 208, 241);
+}
+.contact {
+    flex: 1;
+    background-color:rgb(246, 255, 120);
+}
+
+/* flex: 1 equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+/* flex grow affects the ratio that the elements in a container grow by */
+/* flex shrink affects the ratio that the elements in a container shrink by  ONLY WHEN the children are too big for the container. If oyu do not want an element to shrink you can set shrink to be 0*/
