@@ -32,4 +32,4 @@ div{
 
 /* flex: 1 equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
 /* flex grow affects the ratio that the elements in a container grow by */
-/* flex shrink affects the ratio that the elements in a container shrink by  ONLY WHEN the children are too big for the container. If oyu do not want an element to shrink you can set shrink to be 0*/
+/* flex shrink affects the ratio that the elements in a container shrink by  ONLY WHEN the children are too big for the container. If you do not want an element to shrink you can set shrink to be 0*/
