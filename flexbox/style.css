@@ -11,6 +11,7 @@ nav {
     border: 10px solid orange; 
     /* width: fit-content; */
     /* width: auto; */
+    gap: 8px;
 }
 div{
     font-size: 30px;
@@ -24,10 +25,11 @@ div{
 }
 .about {
     background-color: rgb(124, 208, 241);
+    flex: 1;
 }
 .contact {
-    flex: 1;
     background-color:rgb(246, 255, 120);
+    flex: 1;
 }
 
 /* flex: 1 equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
