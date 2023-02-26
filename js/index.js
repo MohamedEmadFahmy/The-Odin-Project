@@ -35,3 +35,4 @@
 
 // alert( null === undefined ); // false
 // alert( null == undefined ); // true
+alert(3 === 5)
