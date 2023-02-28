@@ -35,4 +35,39 @@
 
 // alert( null === undefined ); // false
 // alert( null == undefined ); // true
-alert(3 === 5)
+// alert(3 === 5)
+
+// function add7(x){
+//     return x+7;
+// }
+// console.log(add7(5));
+
+// function multiply(x, y){
+//     return x*y;
+// }
+// console.log(multiply(2,3));
+
+// function captialize(x){
+//     return x.charAt(0).toUpperCase() + x.slice(1);
+// }
+// console.log(captialize("hi"));
+// console.log(captialize("hiiiiii"));
+
+// function lastLetter(x){
+//     return x.slice(-1);
+// }
+// console.log(lastLetter("hi"));
+// console.log(lastLetter("hype"));
+let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+for (let i = 1; i <= answer; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
