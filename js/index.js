@@ -58,7 +58,7 @@
 // }
 // console.log(lastLetter("hi"));
 // console.log(lastLetter("hype"));
-let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to:"));
 
 for (let i = 1; i <= answer; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
