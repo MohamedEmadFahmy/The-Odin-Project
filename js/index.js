@@ -203,6 +203,152 @@ buttons.forEach( (button) => {
 
 
 
+// let user = new Object(); // "object constructor" syntax
+// let user2 = {};
+
+// let user3 = {
+//     name: "Mohamed",
+//     age: 20,
+// };
+
+
+
+// let fruit = prompt("Which fruit to buy?", "apple");
+
+// let bag = {
+
+//   [fruit]: 5, // the name of the property is taken from the variable fruit
+// };
+
+// alert( bag.apple ); // 5 if fruit="apple"
+
+
+// let fruit = 'apple';
+// let bag = {
+//   [fruit + 'Computers']: 5 // bag.appleComputers = 5
+// };
+
+
+// function makeUser(name, age) {
+//     return {
+//       name: name,
+//       age: age,
+//       // ...other properties
+//     };
+//   }
+  
+//   let user5 = makeUser("John", 30);
+//   alert(user5.name); // John
+
+
+
+//   // these properties are all right
+// let obj = {
+//     for: 1,
+//     let: 2,
+//     return: 3
+//   };
+  
+//   alert( obj.for + obj.let + obj.return );  // 6
+
+
+
+// let user6 = {};
+
+// alert( user6.noSuchProperty === undefined ); // true means "no such property"
+
+
+// let user7 = { name: "John", age: 30 };
+
+// alert( "age" in user7 ); // true, user7.age exists
+// alert( "blabla" in user7 ); // false, user7.blabla doesn't exist
+
+
+
+let user = {
+    name: "John",
+    age: 30,
+    isAdmin: true
+  };
+  
+for (let key in user) {
+    // keys
+    alert( key );  // name, age, isAdmin
+    // values for the keys
+    alert( user[key] ); // John, 30, true
+}
+
+
+function Person(name) {
+    this.name = name;
+    this.introduceSelf = function () {
+      console.log(`Hi! I'm ${this.name}.`);
+    };
+}
+
+const salva = new Person("Salva");
+salva.name;
+salva.introduceSelf();
+// "Hi! I'm Salva."
+
+const frankie = new Person("Frankie");
+frankie.name;
+frankie.introduceSelf();
+// "Hi! I'm Frankie."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
