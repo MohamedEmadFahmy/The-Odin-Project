@@ -113,7 +113,7 @@ two.setAttribute('id', 'theDiv');
 
 
 const twoId = two.getAttribute('id');   
-console.log(twoId);            // theDiv   
+// console.log(twoId);            // theDiv   
 
 two.removeAttribute('id');     // removes specified attribute   
 
@@ -299,9 +299,114 @@ buttons.forEach( (button) => {
 
 myarray = ["a", "b", "c", "d"]
 
-myarray.forEach(item => {
-    console.log(item);
+// myarray.forEach(item => {
+//     console.log(item);
+// });
+
+const firstArr = [1,2,3,4];
+
+const secondArr = [5,6];
+
+const sumArr = firstArr.concat(secondArr);
+
+// console.log(sumArr);  // [1,2,3,4,5,6]
+
+// sumArr.splice(2,2); // [1,2,5,6]
+
+// sumArr.splice(5); // [1,2,3,4,5]
+
+// slice: takes a copy of the array & end index is not included
+
+// console.log(sumArr.slice(0,2)); // [1,2]
+
+// foreach has 3 callback variables not one
+
+sumArr.forEach( (elem, index, array) => {
+    // console.log(`Element ${elem} at index ${index} in array ${array}`);
 });
+
+// sumArr.indexOf(1); // 0
+
+// sumArr.includes(0); // false
+
+// console.log(sumArr.lastIndexOf(5)); // 4
+
+let users = [
+    {id: 1, name: "John"},
+    {id: 2, name: "Pete"},
+    {id: 3, name: "Mary"}
+];
+  
+let user = users.find(item => item.id == 1);
+  
+// alert(user.name); // John
+
+
+// find vs filter:
+    // find finds the first element that satisfies the condition filter gets all
+
+
+// .sort()  sorts the array in place (LEXOGRAPHICALLY)
+
+// let arr = [ 1, 2, 15 ];
+
+// the method reorders the content of arr
+// arr.sort();
+
+// alert( arr );  // 1, 15, 2     (as lexographically 2 is bigger than 15)
+
+
+let countries = ['Österreich', 'Andorra', 'Vietnam'];
+
+// alert( countries.sort( (a, b) => a > b ? 1 : -1) ); // Andorra, Vietnam, Österreich (wrong)
+
+// alert( countries.sort( (a, b) => a.localeCompare(b) ) ); // Andorra,Österreich,Vietnam (correct!)
+
+// USE (localeCompare) WHEN COMPARING STRINGS
+
+
+
+// arr.reverse(); // reverses an array
+
+
+let names = 'Bilbo, Gandalf, Nazgul';
+
+// let arr = names.split(', ');
+
+// for (let name of arr) {
+// //   alert( `A message to ${name}.` ); // A message to Bilbo  (and other names)
+// }
+
+// let str = "test";
+
+// alert( str.split('') ); // t,e,s,t
+
+
+let nameArr = ['Bilbo', 'Gandalf', 'Nazgul'];
+
+let str = nameArr.join(';'); // glue the array into a string using ;
+
+// alert( str ); // Bilbo;Gandalf;Nazgul
+
+
+
+let arr = [1, 2, 3, 4, 5];
+
+let result = arr.reduce((sum, current) => sum + current, 0);
+
+alert(result); // 15
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
