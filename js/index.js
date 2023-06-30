@@ -265,39 +265,54 @@ buttons.forEach( (button) => {
 
 
 
-let user = {
-    name: "John",
-    age: 30,
-    isAdmin: true
-  };
+// let user = {
+//     name: "John",
+//     age: 30,
+//     isAdmin: true
+//   };
   
-for (let key in user) {
-    // keys
-    alert( key );  // name, age, isAdmin
-    // values for the keys
-    alert( user[key] ); // John, 30, true
-}
+// for (let key in user) {
+//     // keys
+//     alert( key );  // name, age, isAdmin
+//     // values for the keys
+//     alert( user[key] ); // John, 30, true
+// }
 
 
-function Person(name) {
-    this.name = name;
-    this.introduceSelf = function () {
-      console.log(`Hi! I'm ${this.name}.`);
-    };
-}
+// function Person(name) {
+//     this.name = name;
+//     this.introduceSelf = function () {
+//       console.log(`Hi! I'm ${this.name}.`);
+//     };
+// }
 
-const salva = new Person("Salva");
-salva.name;
-salva.introduceSelf();
-// "Hi! I'm Salva."
+// const salva = new Person("Salva");
+// salva.name;
+// salva.introduceSelf();
+// // "Hi! I'm Salva."
 
-const frankie = new Person("Frankie");
-frankie.name;
-frankie.introduceSelf();
-// "Hi! I'm Frankie."
+// const frankie = new Person("Frankie");
+// frankie.name;
+// frankie.introduceSelf();
+// // "Hi! I'm Frankie."
+
+
+myarray = ["a", "b", "c", "d"]
+
+myarray.forEach(item => {
+    console.log(item);
+});
 
 
 
+
+// Extension tingz:
+
+// cl => console.log()
+// ct => console.table()
+// fl => for loop 
+// fre => for each loop
+// frf => for of loop
 
 
 
