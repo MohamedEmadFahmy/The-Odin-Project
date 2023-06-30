@@ -394,7 +394,44 @@ let arr = [1, 2, 3, 4, 5];
 
 let result = arr.reduce((sum, current) => sum + current, 0);
 
-alert(result); // 15
+// alert(result); // 15
+
+// const camelize = (words) => {
+//     let wordArray = words.split("-");
+//     let result = "";
+//     for(let i = 0; i < wordArray.length; i++){
+//         let currentWord = wordArray[i];
+//         if(i === 0){
+//             result += currentWord;
+//             continue
+//         }
+//         result += currentWord[0].toUpperCase() + currentWord.slice(1);
+//     }
+//     return result; 
+// };
+
+const camelize = str => {
+    return str
+    .split("-")
+    .map( (word, index) => {
+        return index === 0 ? word : word[0].toUpperCase() + word.slice(1);
+    })
+    .join("");
+}
+
+const filterRange = (original, low, high) => {
+    return original.filter( item => {
+        return item <= high && item >= low;
+    });
+};
+
+let array = [5, 3, 8, 1];
+
+let filtered = filterRange(array, 1, 4);
+
+// alert( filtered ); // 3,1 (matching values)
+
+// alert( array ); // 5,3,8,1 (not modified)
 
 
 
